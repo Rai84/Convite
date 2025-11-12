@@ -82,6 +82,7 @@ p {
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 25px;
+    align-items: stretch;
 }
 
 .icone {
@@ -110,7 +111,6 @@ p {
 }
 
 .icone span {
-    display: block;
     margin-top: 8px;
     color: var(--verde);
     font-size: 0.85rem;
