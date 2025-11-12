@@ -36,6 +36,10 @@ body {
     width: 120px;
     transform: rotate(-90deg);
     z-index: 20;
+    object-fit: cover;
+        /* preenche o espaço sem distorcer */
+        display: block;
+        /* remove espaçamento extra */
 }
 
 .folhas.baixo {
