@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    max-height: 100vh;
     margin: 0;
     padding: 20px;
     overflow: hidden;
@@ -40,7 +40,7 @@ body {
 
 .folhas.baixo {
     top: auto;
-    bottom: -20px;
+    bottom: -80px;
     left: -20px;
     transform: rotate(90deg);
 }
@@ -129,7 +129,7 @@ p {
     }
 
     .folhas {
-        width: 80px;
+        width: 100px;
     }
 }
 
