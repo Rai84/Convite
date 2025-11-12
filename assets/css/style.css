@@ -1,0 +1,182 @@
+:root {
+    --verde: #4b6b4f;
+    --verde-claro: #93b59f;
+    --fundo: #f7f8f5;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.convite {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 40px 30px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Folhas decorativas */
+.folhas {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 120px;
+    transform: rotate(-90deg);
+    z-index: 20;
+}
+
+.folhas.baixo {
+    top: auto;
+    bottom: -20px;
+    left: -20px;
+    transform: rotate(90deg);
+}
+
+.iniciais {
+    color: var(--verde-claro);
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: var(--verde);
+    font-size: 2.3em;
+    margin: 5px 0 15px;
+}
+
+p {
+    color: #444;
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.data {
+    margin: 20px 0;
+    font-weight: 500;
+    color: var(--verde);
+    letter-spacing: 1px;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.icone {
+    text-align: center;
+}
+
+.icone a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.icone a:hover {
+    background-color: var(--verde-claro);
+}
+
+.icone span {
+    display: block;
+    margin-top: 8px;
+    color: var(--verde);
+    font-size: 0.85rem;
+}
+
+/* ------------------ */
+/* 📱 CELULAR (até 600px) */
+/* ------------------ */
+@media (max-width: 600px) {
+    .convite {
+        padding: 25px 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .icone a {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+    }
+
+    .folhas {
+        width: 80px;
+    }
+}
+
+/* ------------------ */
+/* 💻 TABLET (601px–900px) */
+/* ------------------ */
+@media (min-width: 601px) and (max-width: 900px) {
+    .convite {
+        padding: 35px 30px;
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .icone a {
+        width: 65px;
+        height: 65px;
+        font-size: 1.6rem;
+    }
+
+    .folhas {
+        width: 100px;
+    }
+}
+
+/* ------------------ */
+/* 🖥️ COMPUTADOR (acima de 900px) */
+/* ------------------ */
+@media (min-width: 901px) {
+    .convite {
+        padding: 45px 35px;
+        max-width: 550px;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    .icone a {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+
+    .folhas {
+        width: 120px;
+    }
+}
